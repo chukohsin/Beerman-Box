@@ -1,21 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Geo&subset=latin);
 body {
-  font-family: sans-serif;
+  background-color: black
 }
 
-a {
-  text-decoration: none;
+p.description::-webkit-scrollbar-track {
+      color: black;
 }
 
-label {
-  display: block;
+nav h1 {
+	margin: auto;
+	font-family: 'Geo', serif;
+	font-size: 200px;
+	color: white;
+	-webkit-font-smoothing: none;
+	text-align: center;
+	text-shadow: 6px 6px #FF0000, 10px 10px #0000FF;
+	padding-top: 20px;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
+
+#game {
+  position: absolute;
+  left: 320px;
+  top: 240px;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+.content {
+	border: 3px dashed white;
+	border-radius: 5px;
+	width: 640px;
+	height: 640px;
+	position: absolute;
+	left: 980px;
+	top: 240px;
+	color: white;
+	font-family: 'Geo', serif;
+	font-size: 30px;
+	z-index: 5;
+	overflow: hidden;
+}
+
+#style {
+	color: #39ff14;
+	padding-top: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 240px;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#title {
+	overflow: hidden; 
+	border-right: .15em solid orange; 
+	white-space: nowrap;  
+	margin: 0 auto; 
+	letter-spacing: .15em; 
+	animation: 
+	typing 3.5s steps(40, end),
+	blink-caret .75s step-end infinite;
+}
+
+.description {
+	overflow:auto;
+	height: 180px;
+}
+
+#beer {
+	padding: 20px;
+	height: 300px;
+}
+
+#water {
+	z-index: 10;
+	color: white;
+	font-size: 80px;
+	padding-top: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Geo', serif;
+	 -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 0.8s;
+
+}
+
+.coin {
+	height: 160px;
+	 -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+ /*The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+} 
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+
+
+@-webkit-keyframes blink {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
 }

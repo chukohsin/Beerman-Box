@@ -2,9 +2,6 @@
   "name": "Beerman-Box",
   "version": "1.0.0",
   "description": "Wish You Were Beer!",
-  "engines": {
-    "node": ">= 7.0.0"
-  },
   "main": "index.js",
   "scripts": {
     "build-client": "webpack",

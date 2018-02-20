@@ -74,7 +74,7 @@ export class Game extends React.Component {
 			    game.load.tilemap('maze', './assets/neonMap.json', null, Phaser.Tilemap.TILED_JSON)
 			    game.load.image('beer', './assets/realBeer.png')
 			    game.load.image('player', './assets/blobRight.png')
-			    game.load.image('orangeBlob', './assets/orangeBlob.png')
+			    game.load.image('orangeBlob', './assets/orangeblob.png')
 			    game.load.image('redBlob', './assets/redBlob.png')
 			    game.load.image('i-ipa', './assets/ipa/i-ipa.png')
 			    game.load.image('p-ipa', './assets/ipa/p-ipa.png')
